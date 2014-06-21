@@ -61,7 +61,8 @@ run_analysis <- function() {
         library(reshape2)
         goodmelt <- melt(gooddata, id="activity", measure.vars=varnames, na.rm=TRUE)
         goodcast <- dcast(goodmelt, activity ~ variable, mean)
-        goodcast
+        write.table(goodcast, file="tidydata.txt", row.names=FALSE)
+
 
 
         
