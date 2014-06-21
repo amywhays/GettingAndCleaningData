@@ -84,106 +84,15 @@ Explaination of Scripting Code:
 ##  Load files into data frames
         
         strain <- read.table("./UCI HAR Dataset/train/subject_train.txt", header=FALSE, sep="")
-```
-
-```
-## Warning: cannot open file './UCI HAR Dataset/train/subject_train.txt': No
-## such file or directory
-```
-
-```
-## Error: cannot open the connection
-```
-
-```r
         xtrain <- read.table("./UCI HAR Dataset/train/X_train.txt", header=FALSE, sep="")
-```
-
-```
-## Warning: cannot open file './UCI HAR Dataset/train/X_train.txt': No such
-## file or directory
-```
-
-```
-## Error: cannot open the connection
-```
-
-```r
         ytrain <- read.table("./UCI HAR Dataset/train/y_train.txt", header=FALSE, sep="")
-```
-
-```
-## Warning: cannot open file './UCI HAR Dataset/train/y_train.txt': No such
-## file or directory
-```
-
-```
-## Error: cannot open the connection
-```
-
-```r
+        
         stest <- read.table("./UCI HAR Dataset/test/subject_test.txt", header=FALSE, sep="")
-```
-
-```
-## Warning: cannot open file './UCI HAR Dataset/test/subject_test.txt': No
-## such file or directory
-```
-
-```
-## Error: cannot open the connection
-```
-
-```r
         xtest <- read.table("./UCI HAR Dataset/test/X_test.txt", header=FALSE, sep="")
-```
-
-```
-## Warning: cannot open file './UCI HAR Dataset/test/X_test.txt': No such
-## file or directory
-```
-
-```
-## Error: cannot open the connection
-```
-
-```r
         ytest <- read.table("./UCI HAR Dataset/test/y_test.txt", header=FALSE, sep="")
-```
-
-```
-## Warning: cannot open file './UCI HAR Dataset/test/y_test.txt': No such
-## file or directory
-```
-
-```
-## Error: cannot open the connection
-```
-
-```r
+        
         alabel <- read.table("./UCI HAR Dataset/activity_labels.txt", header=FALSE, sep="")
-```
-
-```
-## Warning: cannot open file './UCI HAR Dataset/activity_labels.txt': No such
-## file or directory
-```
-
-```
-## Error: cannot open the connection
-```
-
-```r
         features <- read.table("./UCI HAR Dataset/features.txt", header=FALSE, sep="")
-```
-
-```
-## Warning: cannot open file './UCI HAR Dataset/features.txt': No such file
-## or directory
-```
-
-```
-## Error: cannot open the connection
 ```
 
 2. It then takes the training and test data frames and merges them into xdata and ydata frames.
@@ -193,18 +102,7 @@ Explaination of Scripting Code:
 ##  Merges the training and the test sets to create one data set.
         
         xdata <- rbind(xtrain, xtest)
-```
-
-```
-## Error: object 'xtrain' not found
-```
-
-```r
         ydata <- rbind(ytrain, ytest)
-```
-
-```
-## Error: object 'ytrain' not found
 ```
 
 
