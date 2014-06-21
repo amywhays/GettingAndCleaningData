@@ -2,31 +2,31 @@ Data Dictionary for run_analysis.R
 ========================================================
 
 
-1. "activity"  
-        *"LAYING"    
-        *"SITTING"    
-        *"STANDING" 
-        *"WALKING"
-        *"WALKING_DOWNSTAIRS" 
-        *"WALKING_UPSTAIRS" 
-2. "tBodyAcc.mean.X"          
-3. "tBodyAcc.mean.Y"      
-4. "tBodyAcc.mean.Z"          
-5. "tBodyAcc.std.X"           
-6. "tBodyAcc.std.Y"           
-7. "tBodyAcc.std.Z"
-8. "tGravityAcc.mean.X"       
-9. "tGravityAcc.mean.Y"        
-10. "tGravityAcc.mean.Z"       
-11. "tGravityAcc.std.X"      
-12. "tGravityAcc.std.Y"        
-13. "tGravityAcc.std.Z"   
-14. "tBodyAccJerk.mean.X"      
-15. "tBodyAccJerk.mean.Y"   
-16. "tBodyAccJerk.mean.Z"   
-17. "tBodyAccJerk.std.X"     
-18. "tBodyAccJerk.std.Y"       
-19. "tBodyAccJerk.std.Z"        "tBodyGyro.mean.X"         
+1. activity  
+        * LAYING    
+        * SITTING    
+        * STANDING
+        * WALKING
+        * WALKING_DOWNSTAIRS
+        * WALKING_UPSTAIRS
+2. tBodyAcc.mean.X          
+3. tBodyAcc.mean.Y      
+4. tBodyAcc.mean.Z          
+5. tBodyAcc.std.X           
+6. tBodyAcc.std.Y           
+7. tBodyAcc.std.Z
+8. tGravityAcc.mean.X       
+9. tGravityAcc.mean.Y        
+10. tGravityAcc.mean.Z       
+11. tGravityAcc.std.X      
+12. tGravityAcc.std.Y        
+13. tGravityAcc.std.Z   
+14. tBodyAccJerk.mean.X      
+15. tBodyAccJerk.mean.Y   
+16. tBodyAccJerk.mean.Z   
+17. tBodyAccJerk.std.X     
+18. tBodyAccJerk.std.Y       
+19. tBodyAccJerk.std.Z        "tBodyGyro.mean.X"         
 [21] "tBodyGyro.mean.Y"          "tBodyGyro.mean.Z"         
 [23] "tBodyGyro.std.X"           "tBodyGyro.std.Y"          
 [25] "tBodyGyro.std.Z"           "tBodyGyroJerk.mean.X"     
