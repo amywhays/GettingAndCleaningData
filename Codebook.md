@@ -1,5 +1,59 @@
-Title
+Data Dictionary for run_analysis.R
 ========================================================
+
+
+1. "activity"  
+        *"LAYING"    
+        *"SITTING"    
+        *"STANDING" 
+        *"WALKING"
+        *"WALKING_DOWNSTAIRS" 
+        *"WALKING_UPSTAIRS" 
+2. "tBodyAcc.mean.X"          
+3. "tBodyAcc.mean.Y"      
+4. "tBodyAcc.mean.Z"          
+5. "tBodyAcc.std.X"           
+6. "tBodyAcc.std.Y"           
+7. "tBodyAcc.std.Z"
+8. "tGravityAcc.mean.X"       
+9. "tGravityAcc.mean.Y"        
+10. "tGravityAcc.mean.Z"       
+11. "tGravityAcc.std.X"      
+12. "tGravityAcc.std.Y"        
+13. "tGravityAcc.std.Z"   
+14. "tBodyAccJerk.mean.X"      
+15. "tBodyAccJerk.mean.Y"   
+16. "tBodyAccJerk.mean.Z"   
+17. "tBodyAccJerk.std.X"     
+18. "tBodyAccJerk.std.Y"       
+19. "tBodyAccJerk.std.Z"        "tBodyGyro.mean.X"         
+[21] "tBodyGyro.mean.Y"          "tBodyGyro.mean.Z"         
+[23] "tBodyGyro.std.X"           "tBodyGyro.std.Y"          
+[25] "tBodyGyro.std.Z"           "tBodyGyroJerk.mean.X"     
+[27] "tBodyGyroJerk.mean.Y"      "tBodyGyroJerk.mean.Z"     
+[29] "tBodyGyroJerk.std.X"       "tBodyGyroJerk.std.Y"      
+[31] "tBodyGyroJerk.std.Z"       "tBodyAccMag.mean"         
+[33] "tBodyAccMag.std"           "tGravityAccMag.mean"      
+[35] "tGravityAccMag.std"        "tBodyAccJerkMag.mean"     
+[37] "tBodyAccJerkMag.std"       "tBodyGyroMag.mean"        
+[39] "tBodyGyroMag.std"          "tBodyGyroJerkMag.mean"    
+[41] "tBodyGyroJerkMag.std"      "fBodyAcc.mean.X"          
+[43] "fBodyAcc.mean.Y"           "fBodyAcc.mean.Z"          
+[45] "fBodyAcc.std.X"            "fBodyAcc.std.Y"           
+[47] "fBodyAcc.std.Z"            "fBodyAccJerk.mean.X"      
+[49] "fBodyAccJerk.mean.Y"       "fBodyAccJerk.mean.Z"      
+[51] "fBodyAccJerk.std.X"        "fBodyAccJerk.std.Y"       
+[53] "fBodyAccJerk.std.Z"        "fBodyGyro.mean.X"         
+[55] "fBodyGyro.mean.Y"          "fBodyGyro.mean.Z"         
+[57] "fBodyGyro.std.X"           "fBodyGyro.std.Y"          
+[59] "fBodyGyro.std.Z"           "fBodyAccMag.mean"         
+[61] "fBodyAccMag.std"           "fBodyBodyAccJerkMag.mean" 
+[63] "fBodyBodyAccJerkMag.std"   "fBodyBodyGyroMag.mean"    
+[65] "fBodyBodyGyroMag.std"      "fBodyBodyGyroJerkMag.mean"
+[67] "fBodyBodyGyroJerkMag.std" 
+
+
+
 
 This is an R Markdown document. Markdown is a simple formatting syntax for authoring web pages (click the **Help** toolbar button for more details on using R Markdown).
 
