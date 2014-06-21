@@ -78,7 +78,7 @@ Explaination of Scripting Code:
 -------------------------------
 
 
-1. The script starts by loading the data files into the data frames to be analyzed.
+  The script starts by loading the data files into the data frames to be analyzed.
 
 ```r
 ##  Load files into data frames
@@ -95,7 +95,7 @@ Explaination of Scripting Code:
         features <- read.table("./UCI HAR Dataset/features.txt", header=FALSE, sep="")
 ```
 
-2. It then takes the training and test data frames and merges them into xdata and ydata frames. Xdata contains the measurements and ydata contains the activity id's
+  It then takes the training and test data frames and merges them into xdata and ydata frames. Xdata contains the measurements and ydata contains the activity id's
 
 
 ```r
@@ -105,7 +105,7 @@ Explaination of Scripting Code:
         ydata <- rbind(ytrain, ytest)
 ```
 
-3. Then it adds the column names. The features dataset contains the measurement column names.  And the alabel dataset contains the labels for the activities that were tested.
+  Then it adds the column names. The features dataset contains the measurement column names.  And the alabel dataset contains the labels for the activities that were tested.
 
 ```r
 ## Adding the column names
@@ -114,7 +114,7 @@ Explaination of Scripting Code:
         colnames(alabel) <- c("id", "activity")
 ```
 
-4.  Then it keeps only the measurements containing the mean and standard deviation.  And add the first column which contains the ydata activity id's. 
+  Then it keeps only the measurements containing the mean and standard deviation.  And add the first column which contains the ydata activity id's. 
 
 ```r
 ##  Extracts only the measurements on the mean and
@@ -125,7 +125,7 @@ Explaination of Scripting Code:
         mydata <- cbind(ydata, newdata)
 ```
 
-5.  Then it adds a column containing the activity labels matching the activity id's from the ydata.
+  Then it adds a column containing the activity labels matching the activity id's from the ydata.
 
 ```r
 ##  Uses descriptive activity names to name the activities in the data set
@@ -133,7 +133,7 @@ Explaination of Scripting Code:
         activities <- merge(alabel, mydata, by.x="id", by.y = "act_id", all = TRUE, incomparables = NA)
 ```
 
-6.  Then it relabels the measurement dropping "()" from the names.  I chose to keep the rest of the original names to be able to easily cross reference to the original data if need be.
+  Then it relabels the measurement dropping "()" from the names.  I chose to keep the rest of the original names to be able to easily cross reference to the original data if need be.
 
 ```r
 ##  Appropriately labels the data set with descriptive variable names.
@@ -143,14 +143,14 @@ Explaination of Scripting Code:
         colnames(activities) <- discnames
 ```
 
-7.  Then it drops the ydata activity id field.
+  Then it drops the ydata activity id field.
 
 ```r
 ## drop the id field.
         gooddata <- activities[, names(activities) != "id"]
 ```
 
-8.  Then it puts the new variable names into a vector for use when melting the data.
+  Then it puts the new variable names into a vector for use when melting the data.
 
 ```r
 ## get variable names
@@ -159,7 +159,7 @@ Explaination of Scripting Code:
         varnames<- colnames(varnames)
 ```
 
-9.  Then it initializes the "reshape2" library to use the melt and dcast functions.  And then 
+  Then it initializes the "reshape2" library to use the melt and dcast functions.  And then 
 melts the data into a narrow table to run a dcast summary to calculate the mean of each variable
 for each activity.  Then it writes the resulting data to a text file.
 
@@ -172,3 +172,4 @@ for each activity.  Then it writes the resulting data to a text file.
         write.table(goodcast, file="tidydata.txt", row.names=FALSE)
 ```
 
+The codebook.rmd file lists a discriptions of all the variable names.
