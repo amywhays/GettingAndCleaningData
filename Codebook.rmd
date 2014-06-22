@@ -14,7 +14,7 @@ Explaination of Measurements
 ----------------------------
 
 From the original features_info.txt file explaining what was measured and how the naming convention is created.  
-I choose to use names like the original naming convention because it could be easily cross referenced to the original data.
+
 
         Feature Selection 
         =================
@@ -49,6 +49,12 @@ I choose to use names like the original naming convention because it could be ea
         tBodyGyroJerkMean
         
         The complete list of variables of each feature vector is available in 'features.txt'
+
+I choose to use names like the original naming convention because it could be easily cross referenced to the original data.  
+
+**The final output the tidydata.txt file contains the means for the fields listed below.**
+
+If the name starts with "t" the units will be "secs" and if it begins with "f" the units will be in "Hz"
 
 2. tBodyAcc.mean.X
 3. tBodyAcc.mean.Y      
